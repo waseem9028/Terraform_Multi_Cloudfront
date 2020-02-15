@@ -26,10 +26,7 @@ resource "aws_cloudfront_distribution" "cfd_id" {
   //Setting for TP
 
   origin {
-    #    domain_name = "awseb-e-i-awsebloa-bo31hwfdqyr3-366871228.eu-central-1.elb.amazonaws.com"   //Hardcoded values
-    #    origin_id   = "ELB-awseb-e-i-awsebloa-bo31hwfdqyr3-366871228/tp.php"
     domain_name = "${data.aws_elb.tp.id}"
-
     origin_id = "ELB-${replace("${data.aws_elb.tp.id}", ".eu-central-1.elb.amazonaws.com", "/tp.php")}" //Trying to set origin_id for tp.
   }
   enabled         = true
