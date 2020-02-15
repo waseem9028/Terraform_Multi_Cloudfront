@@ -15,7 +15,7 @@ variable "bucket_name" {
 
 variable "acm_certificate_arn" {
   type    = "string"
-  default = "arn:aws:acm:us-east-1:849270548413:certificate/44a687e9-5062-4159-9da8-9bf0d551cc3a"
+  default = "arn:aws:acm:us-east-1:821323231213:certificate/4114587e9-1262-12323-9da8-231231dsd2312"
 }
 
 variable "service" {
@@ -28,8 +28,6 @@ variable "stage" {
 
 variable "lb_name" {
   type = "string"
-
-  #  default = "awseb-e-i-AWSEBLoa-BO31HWFDQYR3"
   default = ""
 }
 
