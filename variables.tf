@@ -15,7 +15,7 @@ variable "bucket_name" {
 
 variable "acm_certificate_arn" {
   type    = "string"
-  default = "arn:aws:acm:us-east-1:821323231213:certificate/4114587e9-1262-12323-9da8-231231dsd2312"
+  default = "arn:aws:acm:us-east-1:82132xxxx213:certificate/411xxxx7e9-1262-12xx3-9da8-23123xxxxsd2312"
 }
 
 variable "service" {
